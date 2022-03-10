@@ -25,6 +25,8 @@ app.use(async(req,res,next)=>{
 })
 
 app.use(process.env.URL_API+"/regions",routes.regionRoute)
+app.use(process.env.URL_API+"/employee",routes.employeeRoute)
+app.use(process.env.URL_API+"/user",routes.userRoute)
 
 const dropDatabaseSync = false
 
